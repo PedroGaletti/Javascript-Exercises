@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            vetor = [];
+            aux = 0;
+            for(i = 0; i < 5; i++) {
+                var a = prompt("digite um número: ")
+                vetor.push(a);
+            }
+            for(i = 0; i < vetor.length; i++) {
+                if(vetor[i] > aux) {
+                    aux = vetor[i];
+                }
+            }
+            console.log(aux);
+        </script>
+    </body>
+</html>

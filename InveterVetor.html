@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            vetor = [];
+
+            for(i = 0; i < 5; i++) {
+                var a = parseInt(prompt("digite um número: "));
+                vetor.push(a);
+            }
+            console.log("vetor original: " + vetor);
+
+            for(i = 0, j = vetor.length - 1; i < j; i += 1, j -= 1) {
+                var aux = vetor[i];
+                vetor[i] = vetor[j];
+                vetor[j] = aux;
+            }
+
+            console.log("vetor invertido: " + vetor);
+
+        </script>
+    </body>
+</html>
